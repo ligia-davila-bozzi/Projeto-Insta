@@ -1,0 +1,118 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+  
+.conteiner {
+	width: 935px;
+	height: 54px;
+	background: green;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+  
+.cx {
+	width: 50px;
+	height: 100%;
+	background: black;
+}
+  
+.borda {
+	width: 100%;
+	height: 1px;
+	background: #dbdbdb;
+	margin-bottom: 34px;
+}
+  
+.tam {
+	height: 116px;
+	border: 1px solid orange;
+	margin-bottom: 24px;
+}
+  
+.body {
+	display: flex;
+	justify-content: center;
+}
+  
+  .rolante {
+	height: 6120px;
+	background: blue;
+  }
+  
+  .cxStorie {
+	height: 116px;
+	width: 612px;
+	border: 1px solid #dbdbdb;
+	background: fuchsia;
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+	  align-items: center;
+  }
+  
+  .timeline {
+	width: 612px;
+	margin-bottom: 60px;
+	background: turquoise;
+	border: 1px solid #dbdbdb;
+  }
+  
+  .topPost {
+
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	height: 60px;
+  }
+  .ini {
+	  width: 40px;
+	  height: 40px;
+	  background: black;
+  }
+
+  .fim{
+	width: 40px;
+	height: 40px;
+	background: white;
+  }
+  
+  .post {
+	width: 612px;
+	height: 612px;
+  }
+
+  .storie {
+	
+  }
+
+  .ipost {
+	  margin-left: 15px;
+  }
+
+  
+  .sidebar {
+	margin-top: 23px;
+	width: 293px;
+	height: 411px;
+	background: goldenrod;
+	margin-left: 30px;
+  }
+
+  @media (max-width: 935px) {
+	.conteiner {
+		width: 100%;
+	}
+	.sidebar {
+		display: none;
+	}
+  }
+
+  @media (max-width: 614px) {
+	  .post {
+		  width: 100%;
+		  height: calc(width);
+	  }
+  }
