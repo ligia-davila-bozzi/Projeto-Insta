@@ -2,8 +2,22 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	/*position: relative;*/
 }
-  
+
+a {
+	text-decoration: none;
+	color:	black;
+}
+  /* .topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+} */
 .conteiner {
 	width: 935px;
 	height: 54px;
@@ -11,19 +25,61 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
+  	top: 0;
 }
-  
-.cx {
-	width: 50px;
-	height: 100%;
-	background: black;
+
+.logo {
+	display: flex;
+	
 }
+.barrinha {
+	height: 22px;
+	width: 1px;
+	background-color: black;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.lgo {
+	height: 22px;
+	width: 22px;
+}
+
+.busca {
+	width: 213px;
+	height: 26px;
+	border-radius: 3px;
+	border: 1px solid #dbdbdb;
+	background-color: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.acess {
+	height: 22px;
+	width: 22px;
+	margin-left: 15px;
+}
+
   
 .borda {
 	width: 100%;
 	height: 1px;
 	background: #dbdbdb;
 	margin-bottom: 34px;
+	margin-top: 54px;
+	position: fixed;
+	top: 0;
+}
+
+.mobile {
+	display: none;
+}
+
+.insta {
+	display: none;
 }
   
 .tam {
@@ -35,6 +91,7 @@ body {
 .body {
 	display: flex;
 	justify-content: center;
+	margin-top: 88px;
 }
   
   .rolante {
@@ -49,7 +106,7 @@ body {
 	background: fuchsia;
 	margin-bottom: 24px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	  align-items: center;
   }
   
@@ -67,29 +124,26 @@ body {
 	  align-items: center;
 	height: 60px;
   }
-  .ini {
-	  width: 40px;
-	  height: 40px;
-	  background: black;
-  }
+    
+.icpost {
+	width: 16px;
+	height: 16px;
+	margin-right: 17px;
+}
 
-  .fim{
-	width: 40px;
-	height: 40px;
-	background: white;
-  }
-  
   .post {
 	width: 612px;
 	height: 612px;
   }
 
-  .storie {
+  /*.storie {
 	
-  }
+  }*/
 
   .ipost {
-	  margin-left: 15px;
+	  height: 32px;
+	  width: 32px;
+	  margin-left: 17px;
   }
 
   
@@ -99,6 +153,9 @@ body {
 	height: 411px;
 	background: goldenrod;
 	margin-left: 30px;
+	/*position: fixed;
+	top: 111px;
+	right: 208px;*/
   }
 
   @media (max-width: 935px) {
@@ -108,6 +165,16 @@ body {
 	.sidebar {
 		display: none;
 	}
+
+	.acessorio {
+		margin-right: 15px;
+	}
+	.acessorio (2) {
+		display: none;
+	}
+	.logo {
+		margin-left: 15px;
+	}
   }
 
   @media (max-width: 614px) {
@@ -115,4 +182,45 @@ body {
 		  width: 100%;
 		  height: calc(width);
 	  }
+	  .busca {
+		  display: none;
+	  }
+
+	  .acessorio ion-icon:nth-child(2) {
+		  display: none;
+	  }
+	  .acessorio ion-icon:nth-child(3) {
+		display: none;
+	}
+	.acessorio ion-icon:nth-child(4) {
+		display: none;
+	}
+
+	.insta {
+		display: contents;		
+	}
+
+	.logo > div {
+		display: none;
+	}
+
+	.nomobile {
+		display: none;
+	}
+	
+	.mobile {
+		width: 100%;
+		height: 52px;
+		background: green;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		bottom: 0;
+		border: 1px solid red;
+	}
+
+	.body {
+		margin-top: 54px;
+	}
   }
