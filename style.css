@@ -125,6 +125,32 @@ a {
   overflow: hidden;
   text-overflow: clip; 
   }
+
+  .storie {
+	position: relative;
+	width: 66px;
+	height: 66px;
+	background: blue;
+	margin-left: 15px;
+  }
+  .fora {
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+  }
+.dentro {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+  }
+  .storie > div {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	border-radius: 50%;
+	width: 56px;
+	height: 56px;
+  }
   
   .timeline {
 	width: 612px;
@@ -163,11 +189,6 @@ a {
 	height: 612px;
   }
 
-  .storie {
-	  margin-left: 15px;
-	  margin-right: px;
-  }
-
   .ipost {
 	  height: 32px;
 	  width: 32px;
@@ -197,9 +218,7 @@ a {
 	.acessorio {
 		margin-right: 15px;
 	}
-	.acessorio (2) {
-		display: none;
-	}
+	
 	.logo {
 		margin-left: 15px;
 	}
@@ -217,6 +236,7 @@ a {
 	  .acessorio ion-icon:nth-child(2) {
 		  display: none;
 	  }
+	  
 	  .acessorio ion-icon:nth-child(3) {
 		display: none;
 	}
@@ -259,5 +279,4 @@ a {
 	.timeline {
 		width: 100%;
 	}
-	
   }
