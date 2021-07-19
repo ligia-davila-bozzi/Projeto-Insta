@@ -1,32 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*position: relative;*/
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+	}
+.topao {
+	display: flex;
+	justify-content: center;
+	background: #FFFFFF;
+	width: 100%;
+	border-bottom: 1px solid #dbdbdb;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
 }
 
 a {
 	text-decoration: none;
 	color:	black;
 }
-  /* .topo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-} */
+  
 .conteiner {
 	width: 935px;
-	height: 54px;
-	background: green;
+	height: 52px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
   	top: 0;
+	z-index: 1;
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
 }
 
 .logo {
@@ -51,7 +59,7 @@ a {
 	height: 26px;
 	border-radius: 3px;
 	border: 1px solid #dbdbdb;
-	background-color: #fafafa;
+	background: #FFFFFF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -81,6 +89,7 @@ a {
 	margin-top: 54px;
 	position: fixed;
 	top: 0;
+	z-index: 1;
 }
 
 .mobile {
@@ -91,47 +100,37 @@ a {
 	display: none;
 }
   
-.tam {
-	height: 116px;
-	border: 1px solid orange;
-	margin-bottom: 24px;
-}
-  
 .body {
 	display: flex;
 	justify-content: center;
 	margin-top: 88px;
+	position: relative;
+	
 }
   
-  .rolante {
-	background: blue;	
-}
-  /* 
-  div.a {
-  white-space: nowrap; 
-  overflow: hidden;
-  text-overflow: clip; 
-} */
   .cxStorie {
 	height: 116px;
 	width: 612px;
 	border: 1px solid #dbdbdb;
-	background: fuchsia;
 	margin-bottom: 24px;
 	display: flex;
 	align-items: center;
 	border-radius: 3px;
 	white-space: nowrap; 
-  overflow: hidden;
-  text-overflow: clip; 
+	overflow: hidden;
+	text-overflow: clip;
+	position: relative;
+	background: #FFFFFF
   }
 
   .storie {
 	position: relative;
 	width: 66px;
 	height: 66px;
-	background: blue;
 	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
   }
   .fora {
 	width: 66px;
@@ -151,13 +150,21 @@ a {
 	width: 56px;
 	height: 56px;
   }
+
+  .passaStorie {
+	position: absolute;
+	top: 46px;
+	right: 9px;
+	height: 26px;
+	width: 26px;
+  }
   
   .timeline {
 	width: 612px;
 	margin-bottom: 60px;
-	background: turquoise;
 	border: 1px solid #dbdbdb;
 	border-radius: 3px;
+	background: #FFFFFF
   }
   
   .topPost {
@@ -171,7 +178,7 @@ a {
 	  display: flex;
 	  justify-content: space-between;
 	  margin-top: 5px;
-	  margin-bottom: 5px;
+	  
   }
     
 .icpost {
@@ -180,12 +187,15 @@ a {
 	margin-right: 100px;
 }
 
+.like {
+	margin-top: 5px;
+}
 .ilike {
 	margin-left: 15px;
 }
 
   .post {
-	width: 612px;
+	width: 100%;
 	height: 612px;
   }
 
@@ -200,11 +210,35 @@ a {
 	margin-top: 23px;
 	width: 293px;
 	height: 411px;
-	background: goldenrod;
 	margin-left: 30px;
-	/*position: fixed;
-	top: 111px;
-	right: 208px;*/
+  }
+
+  .imgPerfil {
+	width: 56px;
+	height: 56px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+  .sugestoes
+  {
+	  height: 32px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-top: 15px;
+  }
+
+  .ini {
+	  display: flex;
+	  align-items: center;
+  }
+
+  .imgSuge {
+	  width: 36px;
+	  height: 36px;
+	  margin-right: 10px;
+	  border-radius: 50%;
   }
 
   @media (max-width: 935px) {
@@ -225,10 +259,7 @@ a {
 	
 
   @media (max-width: 614px) {
-	  .post {
-		  width: 100%;
-		  height: calc(width);
-	  }
+	  
 	  .busca {
 		  display: none;
 	  }
@@ -274,6 +305,7 @@ a {
 	}
 	.cxStorie {
 		margin-bottom: 0px;
+		width: 100%;
 	}
 
 	.timeline {
