@@ -31,6 +31,7 @@ a {
 
 .logo {
 	display: flex;
+	align-items: center;
 	
 }
 .barrinha {
@@ -54,13 +55,21 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 3px;
 }
 
 
 .acess {
-	height: 22px;
-	width: 22px;
+	height: 25px;
+	width: 25px;
 	margin-left: 15px;
+}
+
+.q {
+	margin-right: 15px;
+}
+.q:hover {
+	color: gray;
 }
 
   
@@ -95,10 +104,14 @@ a {
 }
   
   .rolante {
-	height: 6120px;
-	background: blue;
-  }
-  
+	background: blue;	
+}
+  /* 
+  div.a {
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: clip; 
+} */
   .cxStorie {
 	height: 116px;
 	width: 612px;
@@ -106,8 +119,11 @@ a {
 	background: fuchsia;
 	margin-bottom: 24px;
 	display: flex;
-	justify-content: space-around;
-	  align-items: center;
+	align-items: center;
+	border-radius: 3px;
+	white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: clip; 
   }
   
   .timeline {
@@ -115,20 +131,31 @@ a {
 	margin-bottom: 60px;
 	background: turquoise;
 	border: 1px solid #dbdbdb;
+	border-radius: 3px;
   }
   
   .topPost {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+  }
 
+  .painel {
 	  display: flex;
 	  justify-content: space-between;
-	  align-items: center;
-	height: 60px;
+	  margin-top: 5px;
+	  margin-bottom: 5px;
   }
     
 .icpost {
-	width: 16px;
-	height: 16px;
-	margin-right: 17px;
+	width: 25px;
+	height: 25px;
+	margin-right: 100px;
+}
+
+.ilike {
+	margin-left: 15px;
 }
 
   .post {
@@ -136,9 +163,10 @@ a {
 	height: 612px;
   }
 
-  /*.storie {
-	
-  }*/
+  .storie {
+	  margin-left: 15px;
+	  margin-right: px;
+  }
 
   .ipost {
 	  height: 32px;
@@ -175,7 +203,7 @@ a {
 	.logo {
 		margin-left: 15px;
 	}
-  }
+	
 
   @media (max-width: 614px) {
 	  .post {
@@ -218,9 +246,18 @@ a {
 		position: fixed;
 		bottom: 0;
 		border: 1px solid red;
+		z-index: 10;
 	}
 
 	.body {
 		margin-top: 54px;
 	}
+	.cxStorie {
+		margin-bottom: 0px;
+	}
+
+	.timeline {
+		width: 100%;
+	}
+	
   }
